@@ -1,0 +1,21 @@
+Exercise #1 - Number guessing game
+For this exercise:
+    Write a function ( guessing_game ) that takes no arguments.
+    When run, the function chooses a random integer between 0 and 100 (inclusive).
+    Then ask the user to guess what number has been chosen.
+    Each time the user enters a guess, the program indicates one of the following:
+        – Too high
+        – Too low
+        – Just right
+    If the user guesses correctly, the program exits. 
+        Otherwise, the user is asked to try again.
+    The program only exits after the user guesses correctly.
+
+This program is a simple application of the comparison operators ( == , < ,
+and > ) to a number, such that a user can guess the random integer that the computer
+has chosen.
+
+First and foremost, we use the random module to generate a random number. After
+importing random , we can then invoke random.randint , which takes two parameters,
+returning a random integer. In general, the random module is a useful tool whenever
+you need to choose a random value.
