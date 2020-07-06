@@ -1,4 +1,4 @@
-# Exercise number 1 - Python WorkOut
+# Exercise number 2 - Python WorkOut
 # Author: Barrios Ramirez Luis Fernando
 # Language: Python3 3.8.2 64-bit
 
