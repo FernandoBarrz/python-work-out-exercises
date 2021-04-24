@@ -1,0 +1,8 @@
+EXERCISE 2 Summing numbers
+We need to re-implement the sum (http://mng.bz/MdW2) function
+that comes with Python. That function takes a sequence of numbers and returns the
+sum of those numbers. So if you were to invoke sum([1,2,3]) , the result would be 6.
+
+The challenge here is to write a mysum function that does the same thing as the
+built-in sum function. However, instead of taking a single sequence as a parameter, it
+should take a variable number of arguments.
