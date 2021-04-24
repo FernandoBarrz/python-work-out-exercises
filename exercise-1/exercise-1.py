@@ -11,8 +11,8 @@ def guessing_game():
     """
         This function generates a random number and ask for guessing it
     """
-    random_number = random.randint(0, 100)
 
+    random_number = random.randint(0, 100)
     while True:
 
         user_input = int(input('Guess a number!\n'))
@@ -21,6 +21,7 @@ def guessing_game():
 
         if user_input < random_number:
             print('Too low\n')
+            print("ferna", flush=True)
 
         if user_input == random_number:
             print('Just right\n')
