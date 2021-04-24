@@ -1,21 +1,20 @@
-Exercise #1 - Number guessing game
+Exercise #4 - Hexadecimal output
 For this exercise:
-    Write a function ( guessing_game ) that takes no arguments.
-    When run, the function chooses a random integer between 0 and 100 (inclusive).
-    Then ask the user to guess what number has been chosen.
-    Each time the user enters a guess, the program indicates one of the following:
-        – Too high
-        – Too low
-        – Just right
-    If the user guesses correctly, the program exits. 
-        Otherwise, the user is asked to try again.
-    The program only exits after the user guesses correctly.
+    For this exercise, you need to write a function ( hex_output ) that takes a hex num-
+    ber and returns the decimal equivalent. That is, if the user enters 50 , you’ll assume
+    that it’s a hex number (equal to 0x50 ) and will print the value 80 to the screen. And
+    no, you shouldn’t convert the number all at once using the int function, although it’s
+    permissible to use int one digit at a time.
 
-This program is a simple application of the comparison operators ( == , < ,
-and > ) to a number, such that a user can guess the random integer that the computer
-has chosen.
+That is, if the user enters 50 , you’ll assume
+that it’s a hex number (equal to 0x50 ) and will print the value 80 to the screen. And
+no, you shouldn’t convert the number all at once using the int function, although it’s
+permissible to use int one digit at a time.
 
-First and foremost, we use the random module to generate a random number. After
-importing random , we can then invoke random.randint , which takes two parameters,
-returning a random integer. In general, the random module is a useful tool whenever
-you need to choose a random value.
+We need to convert each digit of our decimal number, which was entered as a
+string, into an integer.
+
+We also
+see that int takes two arguments. The first is mandatory and is the string we want to
+turn into an integer. The second is optional and contains the number base. Since
+we’re converting from hexadecimal (i.e., base 16), we pass 16 as the second argument.
