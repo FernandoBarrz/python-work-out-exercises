@@ -1,6 +1,7 @@
-Exercise #4 - Hexadecimal output
+# Exercise #4 - Hexadecimal output
+
 For this exercise:
-    For this exercise, you need to write a function ( hex_output ) that takes a hex num-
+* For this exercise, you need to write a function ( hex_output ) that takes a hex num-
     ber and returns the decimal equivalent. That is, if the user enters 50 , you’ll assume
     that it’s a hex number (equal to 0x50 ) and will print the value 80 to the screen. And
     no, you shouldn’t convert the number all at once using the int function, although it’s

@@ -4,14 +4,16 @@
 
 
 # Main function with no arguments
-def hex_output():
+def hex_output(hex_num: str) -> int:
+
     decimal_num = 0
-    hex_num = input('Enter a hex number to convert: ')
+
     for power, digit in enumerate(reversed(hex_num)):
         decimal_num += int(digit, 16) * (16 ** power)
-        print(decimal_num)
 
-hex_output()
+    return decimal_num
+
+print(hex_output('50'))
 
 
 
