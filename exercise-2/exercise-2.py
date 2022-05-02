@@ -7,6 +7,14 @@ def my_sum(*numbers): # The "splat" operator is used when we need an arbitrary a
     for i in numbers[1:]: # It returns a tuple
         output += i  
     return output
-print(my_sum(4, 6))
+#print(my_sum(4, 16))
+
+def my_sum_type_hints(*nums: list) -> int:
+    total: int = 0
+    for num in nums:
+        total = total + num
+    return total
+print(my_sum_type_hints(16, 4))
+
     
 
