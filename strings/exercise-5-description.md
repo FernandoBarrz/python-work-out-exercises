@@ -1,15 +1,15 @@
 # Exercise 5 : Pig Latin
 
-Write a function _( run_timing )_ that asks how long it took for you to run 10 km.
-The function continues to ask how long __(in minutes)__ it took for additional runs, until
-the user presses Enter. At that point, the function exits—but only after calculating and
-displaying the average time that the 10 km runs took.
+Bases on the "secret" language in English speaking countries. 
 
-For example, here’s what the output would look like if the user entered three data
-points:
-Enter 10 km run time: 15
-Enter 10 km run time: 20
-Enter 10 km run time: 10
-Enter 10 km run time: <enter>
+The rules for translating words from English into Pig Latin are quite simple:
 
-Average of 15.0, over 3 runs
+* IF the word begins with a vowel (a, e, i, o or u), add "way" to the end of the word.
+    * So "air" becomes "airway" and "eat" becomes "eatway".
+* IF the word begins with any other letter,
+    * then we take the fisrt letter, put it on the end of the word, and then add "ay".
+    * Thus, "python" becomes "ythonpay", and "computer" becomes "omputercay"
+
+## For this excercise
+Write a function (pig_latin) that takes a string as input, assumed to be an English word.
+The function should return the translation of this word into Pig Latin
