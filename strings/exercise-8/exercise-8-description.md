@@ -1,4 +1,4 @@
-# Exercise 7 : Sorting a string
+# Exercise 8: Sorting a string
 
 ## For this excercise
 Write a function (strsort), that takes a single string as its input and returns a string.
