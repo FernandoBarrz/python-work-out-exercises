@@ -1,4 +1,4 @@
-# Exercise 11 : 
+# Exercise 11 : Alphabetizing names
 
 ## For this excercise
 Write  a function (alphabetize_names), that assumes the existence of a PEOPLE constant defined as shown in the code.

@@ -2,7 +2,6 @@
 # Author: Barrios Ramirez Luis Fernando
 # Language: Python3 3.10.2 64-bit on Mac M1
 
-
 from importlib.util import find_spec
 
 import operator
@@ -31,6 +30,7 @@ def alphabetize_names(sequence_to_sort):
 
 for e in alphabetize_names(PEOPLE):
     print(e["last"], e["first"])
+
 
 
     
