@@ -1,4 +1,4 @@
-# Exercise 12 : Word with most repeated letters
+# Exercise 13 : Word with most repeated letters
 
 ## For this excercise
 Write  a function (most_repeating_word), that takes a sequence of strings as input. 
