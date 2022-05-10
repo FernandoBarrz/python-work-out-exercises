@@ -1,4 +1,4 @@
-# Exercise 13 : Printing tuple records
+# Exercise 14 : Restaurant
 
 ## For this excercise
 Write  a function (most_repeating_word), that takes a sequence of strings as input. 
