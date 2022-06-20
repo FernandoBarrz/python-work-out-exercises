@@ -9,14 +9,18 @@ def most_repeating_word(sequence_to_count):
     '''
     Return the string that contains the greatest number of repeated letters.
     '''
-    most_rpt_word = []
+    output = ''
+    max_count = 1
     for element in sequence_to_count:
-        most_rpt_word.append(Counter(element).most_common(1)[0][0])
+        temp_var = Counter(element).most_common(1)[0][1]
+        if temp_var >= max_count:
+            max_count = temp_var
+            output = element
+    return output
 
-    return most_rpt_word
 
 
-words = ['this', 'is', 'an', 'elementary', 'test', 'example']
+words = ['this', 'is', 'an', 'elementary', 'testtt', 'example', 'abbba']
 
 print(most_repeating_word(words))
 

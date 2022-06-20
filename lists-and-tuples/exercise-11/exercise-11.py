@@ -26,6 +26,7 @@ def alphabetize_names(sequence_to_sort):
     Return the list of dicts, but sorted by last name and then by first name.
     '''
     # The "Key" parameter to "sorted" gets a function, whose result indicates how we'll sort.
+    # the itemgetter function will return a tuple containing the values associated with last and first.
     return sorted(sequence_to_sort, key= operator.itemgetter('last', 'first'))
 
 for e in alphabetize_names(PEOPLE):
