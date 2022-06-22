@@ -2,23 +2,23 @@
 # Author: Barrios Ramirez Luis Fernando
 # Language: Python3 3.10.2 64-bit on Mac M1
 
-from collections import Counter
+from operator import itemgetter
+
+PEOPLE = [('Donald', 'Trump', 7.85),
+          ('Vladimir', 'Putin', 3.626),
+          ('Jinping', 'Xi', 10.603)] 
 
 
-def most_repeating_word(sequence_to_count):
-    '''
-    Return the string that contains the greatest number of repeated letters.
-    '''
-    most_rpt_word = []
-    for element in sequence_to_count:
-        most_rpt_word.append(Counter(element).most_common(1)[0][0])
-
-    return most_rpt_word
-
-
-words = ['this', 'is', 'an', 'elementary', 'test', 'example']
-
-print(most_repeating_word(words))
+def format_sort_records(sequence=None):
+    if not sequence:
+        return 'No data available'
+    output_str = ''
+    for record in sorted(sequence, key=itemgetter(1, 0)):
+        first_name, last_name, date_arr = record
+        output_str += f'{last_name:10}{first_name:10}{date_arr:5.2f}\n'
+    return output_str
+    
+print(format_sort_records(PEOPLE))
 
     
 

@@ -1,19 +1,16 @@
 # Exercise 13 : Printing tuple records
 
-## For this excercise
-Write  a function (most_repeating_word), that takes a sequence of strings as input. 
-The function should return the string that contains the greatest number of repeated letters. 
-In other words:
-    * For each word, find the letter that appears more than any other.
-    * Find the word whose most-repeated letter appears more than any other.
+Given. 
+PEOPLE = [('Donald', 'Trump', 7.85),
+          ('Vladimir', 'Putin', 3.626),
+          ('Jinping', 'Xi', 10.603)] 
 
-That is, if words is set to
-words = ['this', 'is', 'an', 'elementary', 'test', 'example']
-then your function should return elementary. That’s because
-* 'this' has no repeating letters.
-* 'is' has no repeating letters.
-* 'an' has no repeating letters.
-* 'elementary' has one repeating letter, e, which appears three times.
-* 'test' has one repeating letter, t, which appears twice.
-* 'example' has one repeating letter, e, which appears twice.
+## For this excercise
+
+Wrote a Python function, format_sort_records, that takes the PEOPLE list
+and returns a formateed string that looks llike the following:
+* Trump Donald 7.85
+* Putin Vladimir 3.63
+* Xi Jinping 10.60
+
 
