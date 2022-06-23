@@ -2,23 +2,26 @@
 # Author: Barrios Ramirez Luis Fernando
 # Language: Python3 3.10.2 64-bit on Mac M1
 
-from collections import Counter
+MENU = {'sandwich': 10, 'tea': 7, 'salad': 9}
 
+def restaurant(MENU):
+    total = 0
+    
+    while True:
+        order = input("Type the name of the order: ")
+        if not order:
+            print(f'Your total is ${total}')
+            break
+        print(f"\nOrder: {order}")
+        if order in MENU:
+            price = MENU[order]
+            total += price
+            print(f"{order} costs {price}, total is {total}")
+        else:
+            print(f"Sorry, we are freash out of {order} today.")
 
-def most_repeating_word(sequence_to_count):
-    """
-    Return the string that contains the greatest number of repeated letters.
-    """
-    most_rpt_word = []
-    for element in sequence_to_count:
-        most_rpt_word.append(Counter(element).most_common(1)[0][0])
+restaurant(MENU)
 
-    return most_rpt_word
-
-
-words = ['this', 'is', 'an', 'elementary', 'test', 'example']
-
-print(most_repeating_word(words))
 
     
 

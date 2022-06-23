@@ -1,19 +1,14 @@
 # Exercise 14 : Restaurant
 
 ## For this excercise
-Write  a function (most_repeating_word), that takes a sequence of strings as input. 
-The function should return the string that contains the greatest number of repeated letters. 
-In other words:
-    * For each word, find the letter that appears more than any other.
-    * Find the word whose most-repeated letter appears more than any other.
+Create a constant dict, called MENU, representing the possible items you can order
+at a restaurant. The keys will be strings, and the values will be prices.
+Then write a function, _restaurant_, that asks the user to enter an order:
+* If the user enters the name of a dish on the menu, the program prints the price
+and the running total. It then asks the user again for their order.
+* If the user enters the name of a dish not on the menu, the program scolds the
+user (mildly). It then asks the user again for their order.
+* If the user enters an empty string, the program stops prompting and prints the
+total amount.
 
-That is, if words is set to
-words = ['this', 'is', 'an', 'elementary', 'test', 'example']
-then your function should return elementary. That’s because
-* 'this' has no repeating letters.
-* 'is' has no repeating letters.
-* 'an' has no repeating letters.
-* 'elementary' has one repeating letter, e, which appears three times.
-* 'test' has one repeating letter, t, which appears twice.
-* 'example' has one repeating letter, e, which appears twice.
 
