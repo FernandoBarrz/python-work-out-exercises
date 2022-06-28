@@ -21,6 +21,8 @@ def wordcount(file_name):
             file_counts["lines"] += 1
             unique_words.update(line.split())
 
+    file_counts["unique words"] = len(unique_words)
+    
     for count_v, nums in file_counts.items():
         print(f"{count_v} - {nums}")
 
