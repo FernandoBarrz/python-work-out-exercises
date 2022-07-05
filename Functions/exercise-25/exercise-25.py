@@ -6,11 +6,11 @@
 
     
 def myxml(tag_name, content="", **kwargs):
-    attrs = "".join([f" {key}='{value}'" for key, value in kwargs.items()])
+    attrs = "".join([f' {key}="{value}"' for key, value in kwargs.items()])
     return f"<{tag_name} {attrs}>{content}</{tag_name}>"
 
 
-print(myxml("foo"))
+print(myxml("foo", "content", a=1, b=2, c=3))
     
             
             
