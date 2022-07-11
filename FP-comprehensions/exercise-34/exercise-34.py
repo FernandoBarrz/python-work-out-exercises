@@ -2,13 +2,17 @@
 # Author: Barrios Ramirez Luis Fernando
 # Language: Python3 3.10.2 64-bit on Mac M1
 
-def flatten(complex_list):
-    return [ele 
-            for lst in complex_list
-            for ele in lst]
+def is_supervocalic(word):
+    set_word = set(word)
+    vowels = {"a", "e", "i", "o", "u"}
+    return vowels < set_word
 
+def supervolic_words(file_name):
+    return {word.strip() 
+            for word in open(file_name)
+            if is_supervocalic(word.lower())}
 
-print(flatten([[1, 2], [3, 4]]))
+print(supervolic_words("words.txt"))
 
 
 
