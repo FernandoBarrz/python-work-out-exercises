@@ -2,14 +2,11 @@
 # Author: Barrios Ramirez Luis Fernando
 # Language: Python3 3.10.2 64-bit on Mac M1
 
-def flatten(complex_list):
-    return [ele 
-            for lst in complex_list
-            for ele in lst]
+import freedonia
 
 
-print(flatten([[1, 2], [3, 4]]))
 
 
+print(freedonia.calculate_tax(500, "Harpo", 21))
 
 
