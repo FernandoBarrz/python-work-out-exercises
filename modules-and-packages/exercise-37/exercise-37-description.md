@@ -3,7 +3,7 @@
 ## For this excercise
 
 Write a new module called __menu.py__.
-The moduleshould:
+The module should:
 * Define a function, also called _menu_
     * This function takes any number of key-value pairs as arguments.
     * Each value should be a _callable_(a function or class )
