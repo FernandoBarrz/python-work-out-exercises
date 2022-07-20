@@ -6,3 +6,12 @@
 class Animal:
     def __init__(self):
         pass
+
+class Sheep(Animal):
+    pass
+class Wolve(Animal):
+    pass
+class Snake(Animal):
+    pass
+class Parrot(Animal):
+    pass
