@@ -3,28 +3,16 @@
 # Language: Python3 3.10.2 64-bit on Mac M1
 
 
+import os
 
-class CircleIterator():
-    def __init__(self, data, max_times):
-        self.data = data
-        self.max_times = max_times
-        self.index = 0
-    
-    def __next__(self):
-        if self.index >= self.max_times:
-            raise StopIteration
-        value = self.data[self.index % len(self.data)]
-        self.index += 1
-        return value
+def all_lines(path):
+    for filename in os.listdir(path):
+        full_filename = os.path.join(path, filename)
 
-class Circle:
-    def __init__(self, data, max_times):
-        self.data = data
-        self.max_times = max_times
-
-    def __iter__(self):
-        return CircleIterator(self.data, self.max_times)
-
-c = Circle('abc', 5)
-print(list(c))
-
+        try:
+            for line in open(full_filename):
+                yield line
+        except OSError:
+            pass
+for one_line in all_lines('/etc/'):
+    print(one_line)
